@@ -50,7 +50,8 @@ SELECT
   "FirstRespTime" AT TIME ZONE INTERVAL '0:00' HOUR TO MINUTE AS "FirstRespTime",
   "FirstStepTime" AT TIME ZONE INTERVAL '0:00' HOUR TO MINUTE AS "FirstStepTime",
   "FlexThrottle",
-  "ImpactSpool",
+-- ImpactSpool not available in historical log table and not used in Assessment
+  0 AS "ImpactSpool",
   "InternalRequestNum",
   "IODecayLevel",
   "IterationCount",
